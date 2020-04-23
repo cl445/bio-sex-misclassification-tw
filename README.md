@@ -20,7 +20,7 @@ The research paper was accepted for publication at Neuropsychopharmacology (Inte
 
 For citations please use the data from the following BIBTeX entry:
 ```
-@article{Flint_2020,
+@article{Flint_Foerster_2020,
     title = {Biological sex classification with structural MRI data shows increased misclassification in transgender women},
     author = {Flint, Claas and F{\"o}rster, Katharina and Koser, Sophie A and Konrad, Carsten and Zwitserlood, Pienie and Berger, Klaus and Hermesdorf, Marco and Kircher, Tilo and Nenadic, Igor and Krug, Axel and Baune, Bernhard T and Dohm, Katharina and Redlich, Ronny and Opel, Nils and Arolt, Volker and Hahn, Tim and Jiang, Xiaoyi and Dannlowski, Udo and Grotegerd, Dominik},
     doi = {10.1038/s41386-020-0666-3},
