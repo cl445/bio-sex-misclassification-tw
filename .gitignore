@@ -1,0 +1,10 @@
+ms.pdf
+.idea/**
+*.zip
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.synctex.gz
+*.tdo
