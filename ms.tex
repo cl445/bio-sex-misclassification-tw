@@ -69,7 +69,6 @@
     \end{abstract}
 
 
-% keywords can be removed
     \keywords{Neuroimaging \and Machine Learning \and Gender Dysphoria \and Depression \and Structural MRI \and Brain Development}
 
 
@@ -136,12 +135,12 @@
         \end{center}
         \caption[Application of the trained classifier for biological sex prediction.]{Application of the trained classifier for biological sex prediction.
 
-            \vspace{4pt}
-            \setlength{\tabcolsep}{4pt}
+        \vspace{4pt}
+        \setlength{\tabcolsep}{4pt}
             \begin{tabular}{llll}
-                \hspace{-6pt} Abbreviations: & \acs{cg} &-& \acl{cg} \\
-                & \acs{tw} &-& \acl{tw} \\
-                & \acs{mdd} &-& \acl{mdd}
+                \hspace{-6pt} Abbreviations: & \acs{cg}  & - & \acl{cg}  \\
+                & \acs{tw}  & - & \acl{tw}  \\
+                & \acs{mdd} & - & \acl{mdd}
             \end{tabular}
         }
         \label{fig:application_trained_classifier}
@@ -172,11 +171,11 @@
         \end{center}
         \caption[]{Boxplot for the predicted probabilities of male sex based on the application sample and the third validation sample, including transgender and \acl{cg} individuals.
 
-            \vspace{4pt}
-            \setlength{\tabcolsep}{4pt}
+        \vspace{4pt}
+        \setlength{\tabcolsep}{4pt}
             \begin{tabular}{llll}
-                \hspace{-6pt} Abbreviations: & \acs{cg} &-& \acl{cg} \\
-                & \acs{tw} &-& \acl{tw} \\
+                \hspace{-6pt} Abbreviations: & \acs{cg} & - & \acl{cg} \\
+                & \acs{tw} & - & \acl{tw} \\
             \end{tabular}
         }
         \label{fig:boxplot_probibilities_for_male_classification}
@@ -192,28 +191,33 @@
 
         \begin{center}
             \begin{tabular}{l|S[table-format=2.0]S[table-format=2.0]S[table-format=3.2]l}
-                \multicolumn{1}{c}{}& \multicolumn{2}{c}{\textbf{N}} & \multicolumn{1}{c}{\textbf{\ac{tpr}}}&  \textbf{Fisher’s Exact Test} \\ \cmidrule(lr){2-3}
-                \textbf{Group} & \multicolumn{1}{c}{\textbf{correct}} & \multicolumn{1}{c}{\textbf{total}} & \multicolumn{1}{c}{\textbf{in \%}} & \textbf{against \ac{cg}-men} \\
+                \multicolumn{1}{c}{} & \multicolumn{2}{c}{\textbf{N}} & \multicolumn{1}{c}{\textbf{\ac{tpr}}}
+                & \textbf{Fisher’s Exact Test}
+                \\ \cmidrule(lr){2-3}
+                \textbf{Group}             & \multicolumn{1}{c}{\textbf{correct}} & \multicolumn{1}{c}{\textbf{total}}
+                & \multicolumn{1}{c}{\textbf{in \%}}
+                & \textbf{against \ac{cg}-men}
+                \\
                 \hline
-                \acs{cg}-women & 19 & 19 & 100.00 & $p=1.0$ \\
-                \acs{cg}-men& 14 & 15 & 93.33 & - \\
-                \acs{tw} & 16 & 26 & 61.54 & $p=.028$ *** \\
-                \acs{tw} (treatment naive) & 7 & 8 & 87.50 & $p=.999$ \\
-                \acs{tw} (post \acs{cht}) & 9 & 18 & 50.00 & $p=.008$ *** \\
+                \acs{cg}-women             & 19                                   & 19                                 & 100.00                             & $p=1.0$                      \\
+                \acs{cg}-men               & 14                                   & 15                                 & 93.33                              & -                            \\
+                \acs{tw}                   & 16                                   & 26                                 & 61.54                              & $p=.028$ ***                 \\
+                \acs{tw} (treatment naive) & 7                                    & 8                                  & 87.50                              & $p=.999$                     \\
+                \acs{tw} (post \acs{cht})  & 9                                    & 18                                 & 50.00                              & $p=.008$ ***                 \\
 
             \end{tabular}
 
         \end{center}
         \caption[Classification results in the application sample]{Classification results in the application sample. Classification results in percentage of true positive rate identified biological sex. \\
 
-            \vspace{-6pt}
-            \setlength{\tabcolsep}{4pt}
+        \vspace{-6pt}
+        \setlength{\tabcolsep}{4pt}
             \begin{tabular}{llll}
-                \hspace{-6pt} Abbreviations: & \ac{tpr} &-& \acl{tpr} (sensitivity) \\
-                & \acs{cg} &-& \acl{cg} \\
-                & \acs{tw} &-& \acl{tw} \\
-                & \acs{cht} &-& \acl{cht} \\
-                & *** &-& indicates significance of the Fisher's Exact Test ($p < .05$)
+                \hspace{-6pt} Abbreviations: & \ac{tpr}  & - & \acl{tpr} (sensitivity)                                       \\
+                & \acs{cg}  & - & \acl{cg}                                                      \\
+                & \acs{tw}  & - & \acl{tw}                                                      \\
+                & \acs{cht} & - & \acl{cht}                                                     \\
+                & ***       & - & indicates significance of the Fisher's Exact Test ($p < .05$)
             \end{tabular}
         }
         \label{tab:classification_res_appl}
@@ -229,46 +233,89 @@
         \begin{center}
             \begin{tabular}{l|llS[table-format=3.2]S[table-format=<0.3,add-integer-zero=false]S[table-format=4.0]S[table-format=+2.0]S[table-format=+2.0]S[table-format=+2.0]}
 
-                \multicolumn{1}{c}{}                            & \multicolumn{1}{c}{\textbf{region}}             & & & & & \multicolumn{3}{c}{\textbf{MNI-space}}\\ \cmidrule(lr){7-9}
-                \textbf{compared groups}                        & \textbf{of interest}        & \textbf{side} & \textbf{TFCE} & \textbf{p-FWE}  & \multicolumn{1}{c}{\textbf{k}}           & \multicolumn{1}{c}{x}          & \multicolumn{1}{c}{y}          & \multicolumn{1}{c}{z} \\ \hline
-                \multirow{4}{*}{\ac{tw}-pre \textgreater{} \ac{tw}-post}  & \multirow{2}{*}{insula}     & L & 91.50 & .012 & 76 & -38 & -3 & -12        \\
-                & & R & 54.96 & .033 & 23 & 32 & 10 & -16        \\ \cline{2-9}
-                & \multirow{2}{*}{putamen}    & L & 466.55 & \textless{}.001 & 2005 & -21 & 16 & 8          \\
-                & & R & 395.31 & \textless{}.001 & 1409 & 27 & -8 & 15         \\ \hline
-                \multirow{4}{*}{\ac{tw}-pre \textgreater{} \ac{cg}-women} & \multirow{2}{*}{insula}     & L & 63.21 & \textless{}.001 & 1926 & -39 & -3 & -12        \\
-                & & R & 52.58 & \textless{}.001 & 2299 & 34 & 15 & -10        \\ \cline{2-9}
-                & \multirow{2}{*}{putamen}    & L & 274.31 & \textless{}.001 & 2381 & -21 & 10 & 23          \\
-                & & R & 257.58 & \textless{}.001 & 2316 & 26 & -4 & 14         \\ \hline
-                \multirow{2}{*}{\ac{tw}-pre \textgreater{} \ac{cg}-men}   & \multirow{2}{*}{putamen}    & L & 203.55 & \textless{}.001 & 892 & -21 & 15 & 9        \\
-                & & R & 183.13 & \textless{}.001 & 576 & 28 & -3 & 15         \\ \hline
-                \multirow{5}{*}{\ac{tw}-post \textless{} \ac{cg}-men}     & \multirow{3}{*}{insula}     & L & 38.96 & .005 & 303 & -42 & 14 & -6        \\
-                & & L & 30.99 & .010 & 124 & -42 & -8 & 4        \\
-                & & R & 21.37 & .001 & 131 & 30 & -18 & 20        \\ \cline{2-9}
-                & \multirow{2}{*}{putamen}    & L & 100.64 & .001 & 1050 & -14 & 9 & -2          \\
-                & & R & 70.60 & .001 & 1429 & 26 & 4 & -8         \\ \hline
-                \ac{tw}-post \textless{} \ac{cg}-women & insula & R & 114.58 & .021 & 99 & 34 & -15 & 9        \\ \hline
-                \multirow{5}{*}{\ac{cg}-men \textgreater{} \ac{cg}-women} & \multirow{3}{*}{insula}     & L & 49.7 & \textless{}.001 & 1199 & -44 & 14 & -8        \\
-                & & L & 13.07 & .004 & 48 & -44 & -14 & 8        \\
-                & & R & 109.23 & \textless{}.001 & 1789 & 39 & 16 & 3        \\ \cline{2-9}
-                & \multirow{2}{*}{putamen}    & L & 81.13 & \textless{}.001 & 1972 & 26 & 6 & -4          \\
-                & & R & 100.11 & \textless{}.001 & 1429 & 26 & 4 & -8         \\
+                \multicolumn{1}{c}{} & \multicolumn{1}{c}{\textbf{region}} & & & & & \multicolumn{3}{c}{\textbf{MNI-space}} \\ \cmidrule(lr){7-9}
+                \textbf{compared groups}                                  & \textbf{of interest}     & \textbf{side} & \textbf{TFCE} & \textbf{p-FWE}
+                & \multicolumn{1}{c}{\textbf{k}}
+                & \multicolumn{1}{c}{x}
+                & \multicolumn{1}{c}{y}
+                & \multicolumn{1}{c}{z}
+                \\ \hline
+                \multirow{4}{*}{\ac{tw}-pre \textgreater{} \ac{tw}-post}  & \multirow{2}{*}{insula}
+                & L
+                & 91.50
+                & .012
+                & 76
+                & -38
+                & -3
+                & -12
+                \\
+                &                          & R             & 54.96         & .033            & 23                             & 32                    & 10                    & -16                   \\ \cline{2-9}
+                & \multirow{2}{*}{putamen} & L             & 466.55        & \textless{}.001 & 2005                           & -21                   & 16                    & 8                     \\
+                &                          & R             & 395.31        & \textless{}.001 & 1409                           & 27                    & -8                    & 15                    \\ \hline
+                \multirow{4}{*}{\ac{tw}-pre \textgreater{} \ac{cg}-women} & \multirow{2}{*}{insula}
+                & L
+                & 63.21
+                & \textless{}.001
+                & 1926
+                & -39
+                & -3
+                & -12
+                \\
+                &                          & R             & 52.58         & \textless{}.001 & 2299                           & 34                    & 15                    & -10                   \\ \cline{2-9}
+                & \multirow{2}{*}{putamen} & L             & 274.31        & \textless{}.001 & 2381                           & -21                   & 10                    & 23                    \\
+                &                          & R             & 257.58        & \textless{}.001 & 2316                           & 26                    & -4                    & 14                    \\ \hline
+                \multirow{2}{*}{\ac{tw}-pre \textgreater{} \ac{cg}-men}   & \multirow{2}{*}{putamen}
+                & L
+                & 203.55
+                & \textless{}.001
+                & 892
+                & -21
+                & 15
+                & 9
+                \\
+                &                          & R             & 183.13        & \textless{}.001 & 576                            & 28                    & -3                    & 15                    \\ \hline
+                \multirow{5}{*}{\ac{tw}-post \textless{} \ac{cg}-men}     & \multirow{3}{*}{insula}  & L             & 38.96
+                & .005
+                & 303
+                & -42
+                & 14
+                & -6
+                \\
+                &                          & L             & 30.99         & .010            & 124                            & -42                   & -8                    & 4                     \\
+                &                          & R             & 21.37         & .001            & 131                            & 30                    & -18                   & 20                    \\ \cline{2-9}
+                & \multirow{2}{*}{putamen} & L             & 100.64        & .001            & 1050                           & -14                   & 9                     & -2                    \\
+                &                          & R             & 70.60         & .001            & 1429                           & 26                    & 4                     & -8                    \\ \hline
+                \ac{tw}-post \textless{} \ac{cg}-women                    & insula                   & R             & 114.58        & .021            & 99                             & 34                    & -15                   & 9                     \\ \hline
+                \multirow{5}{*}{\ac{cg}-men \textgreater{} \ac{cg}-women} & \multirow{3}{*}{insula}
+                & L
+                & 49.7
+                & \textless{}.001
+                & 1199
+                & -44
+                & 14
+                & -8
+                \\
+                &                          & L             & 13.07         & .004            & 48                             & -44                   & -14                   & 8                     \\
+                &                          & R             & 109.23        & \textless{}.001 & 1789                           & 39                    & 16                    & 3                     \\ \cline{2-9}
+                & \multirow{2}{*}{putamen} & L             & 81.13         & \textless{}.001 & 1972                           & 26                    & 6                     & -4                    \\
+                &                          & R             & 100.11        & \textless{}.001 & 1429                           & 26                    & 4                     & -8                    \\
 
             \end{tabular}
         \end{center}
         \caption[]{Results of the univariate gray matter region of interest analysis of the insula and putamen.\\
-            Note. Table reports respective statistics of significant clusters of the group comparisons between transgender and \acl{cg} individuals. Clusters resulted from group comparisons corrected for total intracranial volume, age and sexual orientation.
-            For reasons of brevity no results below a threshold of $k = 22$\,voxel have been reported.
-            \\
-            \\
-            Abbreviations:
+        Note. Table reports respective statistics of significant clusters of the group comparisons between transgender and \acl{cg} individuals. Clusters resulted from group comparisons corrected for total intracranial volume, age and sexual orientation.
+        For reasons of brevity no results below a threshold of $k = 22$\,voxel have been reported.
+        \\
+        \\
+        Abbreviations:
 
             \begin{tabular}{lll}
-                \ac{tw} &-& \acl{tw} \\
-                \acs{cg} &-& \acl{cg} \\
-                pre/post &-& before/after hormone treatment \\
-                L/R &-& left/right \\
-                k &-& cluster size \\
-                TFCE &-& Threshold-Free-Cluster-Enhancement with subsequent Family-Wise-Error-Correction.
+                \ac{tw}  & - & \acl{tw}                                                                         \\
+                \acs{cg} & - & \acl{cg}                                                                         \\
+                pre/post & - & before/after hormone treatment                                                   \\
+                L/R      & - & left/right                                                                       \\
+                k        & - & cluster size                                                                     \\
+                TFCE     & - & Threshold-Free-Cluster-Enhancement with subsequent Family-Wise-Error-Correction.
             \end{tabular}
         }
         \label{tab:results_univariat}
@@ -280,8 +327,8 @@
             \includegraphics[scale=0.13]{img/results_univariate_gray_matter_analysis.png}
         \end{center}
         \caption[]{Significant results of the univariate gray matter analysis. Color-bar represents t-values of the extracted clusters. Image shows the cluster at the respective peak voxel as reported in table~\ref{tab:results_univariat}. \\
-            \textbf{A.} Alterations of the insula between groups (\acl{cg} men, \acl{cg} women and \acl{tw} before vs. after hormone treatment)\\
-            \textbf{B.} Alterations of the putamen between groups (\acl{cg} men, \acl{cg} women \acl{tw} before vs. after hormone treatment)
+        \textbf{A.} Alterations of the insula between groups (\acl{cg} men, \acl{cg} women and \acl{tw} before vs. after hormone treatment)\\
+        \textbf{B.} Alterations of the putamen between groups (\acl{cg} men, \acl{cg} women \acl{tw} before vs. after hormone treatment)
         }
         \label{fig:results_univariate_gray_matter_analysis}
     \end{figure}
@@ -327,7 +374,7 @@
 
     Biomedical financial interests or potential conflicts of interest: Tilo Kircher received unrestricted educational grants from Servier, Janssen, Recordati, Aristo, Otsuka, neuraxpharm.
 
-    The other authors (Claas Flint, Katharina Förster, Sophie A. Koser, Carsten Konrad, Pienie Zwitserlood, Klaus Berger, Marco Hermesdorf, Igor Nenadic, Axel Krug, Bernhard T. Baune, Katharina Dohm, Ronny Redlich, Nils Opel, Tim Hahn, Xiaoyi Jiang, Udo Dannlowski, Dominik Grotegerd) declare no conflicts of interest.
+    The other authors (Claas Flint, Katharina Förster, Sophie A. Koser, Carsten Konrad, Pienie Zwitserlood, Klaus Berger, Marco Hermesdorf, Igor Nenadic, Axel Krug, Bernhard T. Baune, Katharina Dohm, Ronny Redlich, Nils Opel, Volker Arolt, Tim Hahn, Xiaoyi Jiang, Udo Dannlowski, Dominik Grotegerd) declare no conflicts of interest.
 
     \section*{Acknowledgements}
     \subsection*{FOR2107}
@@ -338,13 +385,13 @@
 
     Data access and responsibility: All PIs take responsibility for the integrity of the respective study data and their components. All authors and coauthors had full access to all study data.
 
-    Acknowledgements and members by Work Package (WP):
-    WP1: Henrike Bröhl, Katharina Brosch, Bruno Dietsche, Rozbeh Elahi, Jennifer Engelen, Sabine Fischer, Jessica Heinen, Svenja Klingel, Felicitas Meier, Tina Meller, Torsten Sauder, Simon Schmitt, Frederike Stein, Annette Tittmar, Dilara Yüksel (Dept. of Psychiatry, Marburg University). Mechthild Wallnig, Rita Werner (Core-Facility Brainimaging, Marburg University). Carmen Schade-Brittinger, Maik Hahmann (Coordinating Centre for Clinical Trials, Marburg). Michael Putzke (Psychiatric Hospital, Friedberg). Rolf Speier, Lutz Lenhard (Psychiatric Hospital, Haina). Birgit Köhnlein (Psychiatric Practice, Marburg). Peter Wulf, Jürgen Kleebach, Achim Becker (Psychiatric Hospital Hephata, Schwalmstadt-Treysa). Ruth Bär (Care facility Bischoff, Neunkirchen). Matthias Müller, Michael Franz, Siegfried Scharmann, Anja Haag, Kristina Spenner, Ulrich Ohlenschläger (Psychiatric Hospital Vitos, Marburg). Matthias Müller, Michael Franz, Bernd Kundermann (Psychiatric Hospital Vitos, Gießen). Christian Bürger, Fanni Dzvonyar, Verena Enneking, Stella Fingas, Janik Goltermann, Hannah Lemke, Susanne Meinert, Jonathan Repple, Kordula Vorspohl, Bettina Walden, Dario Zaremba (Dept. of Psychiatry, University of Münster). Harald Kugel, Jochen Bauer, Walter Heindel, Birgit Vahrenkamp (Dept. of Clinical Radiology, University of Münster). Gereon Heuft, Gudrun Schneider (Dept. of Psychosomatics and Psychotherapy, University of Münster). Thomas Reker (LWL-Hospital Münster). Gisela Bartling (IPP Münster). Ulrike Buhlmann (Dept. of Clinical Psychology, University of Münster).
-    WP2: Marco Bartz, Miriam Becker, Christine Blöcher, Annuska Berz, Moria Braun, Ingmar Conell, Debora dalla Vecchia, Darius Dietrich, Ezgi Esen, Sophia Estel, Jens Hensen, Ruhkshona Kayumova, Theresa Kisko, Rebekka Obermeier, Anika Pützer, Nivethini Sangarapillai, Özge Sungur, Clara Raithel, Tobias Redecker, Vanessa Sandermann, Finnja Schramm, Linda Tempel, Natalie Vermehren, Jakob Vörckel, Stephan Weingarten, Maria Willadsen, Cüneyt Yildiz (Faculty of Psychology, Marburg University).
-    WP4: Jana Freff, Silke Jörgens, Kathrin Schwarte (Dept. of Psychiatry, University of Münster). Susanne Michels, Goutham Ganjam, Katharina Elsässer (Faculty of Pharmacy, Marburg University). Felix Ruben Picard, Nicole Löwer, Thomas Ruppersberg (Institute of Laboratory Medicine and Pathobiochemistry, Marburg University).
-    WP5: Helene Dukal, Christine Hohmeyer, Lennard Stütz, Viola Schwerdt, Fabian Streit, Josef Frank, Lea Sirignano (Dept. of Genetic Epidemiology, Central Institute of Mental Health, Medical Faculty Mannheim, Heidelberg University).
-    WP6: Anastasia Benedyk, Miriam Bopp, Roman Keßler, Maximilian Lückel, Verena Schuster, Christoph Vogelbacher (Dept. of Psychiatry, Marburg University). Jens Sommer, Olaf Steinsträter (Core-Facility Brainimaging, Marburg University). Thomas W.D. Möbius (Institute of Medical Informatics and Statistics, Kiel University).
-    CP1: Julian Glandorf, Fabian Kormann, Arif Alkan, Fatana Wedi, Lea Henning, Alena Renker, Karina Schneider, Elisabeth Folwarczny, Dana Stenzel, Kai Wenk, Felix Picard, Alexandra Fischer, Sandra Blumenau, Beate Kleb, Doris Finholdt, Elisabeth Kinder, Tamara Wüst, Elvira Przypadlo, Corinna Brehm (Comprehensive Biomaterial Bank Marburg, Marburg University).
+    \subsubsection*{Acknowledgements and members by Work Package (WP)}
+    \paragraph{WP1:} Henrike Bröhl, Katharina Brosch, Bruno Dietsche, Rozbeh Elahi, Jennifer Engelen, Sabine Fischer, Jessica Heinen, Svenja Klingel, Felicitas Meier, Tina Meller, Torsten Sauder, Simon Schmitt, Frederike Stein, Annette Tittmar, Dilara Yüksel (Dept. of Psychiatry, Marburg University). Mechthild Wallnig, Rita Werner (Core-Facility Brainimaging, Marburg University). Carmen Schade-Brittinger, Maik Hahmann (Coordinating Centre for Clinical Trials, Marburg). Michael Putzke (Psychiatric Hospital, Friedberg). Rolf Speier, Lutz Lenhard (Psychiatric Hospital, Haina). Birgit Köhnlein (Psychiatric Practice, Marburg). Peter Wulf, Jürgen Kleebach, Achim Becker (Psychiatric Hospital Hephata, Schwalmstadt-Treysa). Ruth Bär (Care facility Bischoff, Neunkirchen). Matthias Müller, Michael Franz, Siegfried Scharmann, Anja Haag, Kristina Spenner, Ulrich Ohlenschläger (Psychiatric Hospital Vitos, Marburg). Matthias Müller, Michael Franz, Bernd Kundermann (Psychiatric Hospital Vitos, Gießen). Christian Bürger, Fanni Dzvonyar, Verena Enneking, Stella Fingas, Janik Goltermann, Hannah Lemke, Susanne Meinert, Jonathan Repple, Kordula Vorspohl, Bettina Walden, Dario Zaremba (Dept. of Psychiatry, University of Münster). Harald Kugel, Jochen Bauer, Walter Heindel, Birgit Vahrenkamp (Dept. of Clinical Radiology, University of Münster). Gereon Heuft, Gudrun Schneider (Dept. of Psychosomatics and Psychotherapy, University of Münster). Thomas Reker (LWL-Hospital Münster). Gisela Bartling (IPP Münster). Ulrike Buhlmann (Dept. of Clinical Psychology, University of Münster).
+    \paragraph{WP2:} Marco Bartz, Miriam Becker, Christine Blöcher, Annuska Berz, Moria Braun, Ingmar Conell, Debora dalla Vecchia, Darius Dietrich, Ezgi Esen, Sophia Estel, Jens Hensen, Ruhkshona Kayumova, Theresa Kisko, Rebekka Obermeier, Anika Pützer, Nivethini Sangarapillai, Özge Sungur, Clara Raithel, Tobias Redecker, Vanessa Sandermann, Finnja Schramm, Linda Tempel, Natalie Vermehren, Jakob Vörckel, Stephan Weingarten, Maria Willadsen, Cüneyt Yildiz (Faculty of Psychology, Marburg University).
+    \paragraph{WP4:} Jana Freff, Silke Jörgens, Kathrin Schwarte (Dept. of Psychiatry, University of Münster). Susanne Michels, Goutham Ganjam, Katharina Elsässer (Faculty of Pharmacy, Marburg University). Felix Ruben Picard, Nicole Löwer, Thomas Ruppersberg (Institute of Laboratory Medicine and Pathobiochemistry, Marburg University).
+    \paragraph{WP5:} Helene Dukal, Christine Hohmeyer, Lennard Stütz, Viola Schwerdt, Fabian Streit, Josef Frank, Lea Sirignano (Dept. of Genetic Epidemiology, Central Institute of Mental Health, Medical Faculty Mannheim, Heidelberg University).
+    \paragraph{WP6:} Anastasia Benedyk, Miriam Bopp, Roman Keßler, Maximilian Lückel, Verena Schuster, Christoph Vogelbacher (Dept. of Psychiatry, Marburg University). Jens Sommer, Olaf Steinsträter (Core-Facility Brainimaging, Marburg University). Thomas W.D. Möbius (Institute of Medical Informatics and Statistics, Kiel University).
+    \paragraph{CP1:} Julian Glandorf, Fabian Kormann, Arif Alkan, Fatana Wedi, Lea Henning, Alena Renker, Karina Schneider, Elisabeth Folwarczny, Dana Stenzel, Kai Wenk, Felix Picard, Alexandra Fischer, Sandra Blumenau, Beate Kleb, Doris Finholdt, Elisabeth Kinder, Tamara Wüst, Elvira Przypadlo, Corinna Brehm (Comprehensive Biomaterial Bank Marburg, Marburg University).
 
     The FOR2107 cohort project (WP1) was approved by the Ethics Committees of the Medical Faculties, University of Marburg (AZ: 07/14) and University of Münster (AZ: 2014--422-b-S).
 
@@ -356,7 +403,7 @@
     \appendix
     \pagenumbering{roman}
 
-    \lhead{\textsc{Supplements}}
+    \lhead{\textsc \footnotesize Supplements}
 
     \chead{Biological sex misclassification in \acl{tw}}
     \begin{center}
@@ -378,33 +425,33 @@
         \begin{center}
             \begin{tabular}{lr|lccc}
                 \multicolumn{3}{c}{} & {\textbf{female}} & {\textbf{male}} & {\textbf{significance test}} \\ \cline{2-6}
-                \textbf{Münster Neuro-} & \acs{hc} & Quantity & 278 & 388 &  \\
-                \textbf{imaging Cohort} & & Age & 36.4 (11.7) & 35.8 (12.6) & $F(1,665)=0.4917$, $p=.480$\\ \cline{3-6}
-                & \acs{mdd} & Quantity &121 & 164 \\
-                & & Age & 36.4 (11.7) & 35.8 (12.6) & $F(1,665)=0.4917$, $p=.480$\\
-                & & BDI & 23.4 (9.5) & 26.5 (10.9) & $F(1,274)=6.212$, $p=.013$\\
-                & & HDRS-17 & 18.5 (3.8) & 19.5 (4.5) & $F(1,187)=2.739$, $p=.100$\\
-                & & IQ (MWBT) & 111.5 (13.3) & 110.9 (14.1) & $F(1,267)=2.739$, $p=.765$\\  \cline{2-6}
+                \textbf{Münster Neuro-} & \acs{hc} & Quantity  & 278          & 388          &                             \\
+                \textbf{imaging Cohort} &          & Age       & 36.4 (11.7)  & 35.8 (12.6)  & $F(1,665)=0.4917$, $p=.480$ \\ \cline{3-6}
+                & \acs{mdd} & Quantity & 121 & 164 \\
+                &          & Age       & 36.4 (11.7)  & 35.8 (12.6)  & $F(1,665)=0.4917$, $p=.480$ \\
+                &          & BDI       & 23.4 (9.5)   & 26.5 (10.9)  & $F(1,274)=6.212$, $p=.013$  \\
+                &          & HDRS-17   & 18.5 (3.8)   & 19.5 (4.5)   & $F(1,187)=2.739$, $p=.100$  \\
+                &          & IQ (MWBT) & 111.5 (13.3) & 110.9 (14.1) & $F(1,267)=2.739$, $p=.765$  \\  \cline{2-6}
                 \textbf{BiDirect Study} & \acs{hc} & Quantity & 217 & 217 \\
-                & & Age & 51.3 (8.1) & 53.0 (8.0) & $F(1,433)=4.481$, $p=.035$ \\ \cline{3-6}
+                &          & Age       & 51.3 (8.1)   & 53.0 (8.0)   & $F(1,433)=4.481$, $p=.035$  \\ \cline{3-6}
                 & \acs{mdd} & Quantity & 235 & 356 \\
-                & & Age & 48.1 (7.4) & 49.6 (7.3) & $F(1,590)=5.612$,  $p=.019$ \\
-                & & HDRS-17 & 12.6 (6.8) & 14.3 (6.5) & $F(1,587)=10.160$, $p=.002$ \\ \cline{2-6}
+                &          & Age       & 48.1 (7.4)   & 49.6 (7.3)   & $F(1,590)=5.612$,  $p=.019$   \\
+                &          & HDRS-17   & 12.6 (6.8)   & 14.3 (6.5)   & $F(1,587)=10.160$, $p=.002$ \\ \cline{2-6}
                 \textbf{FOR2107 Study} & \acs{hc} & Quantity & 246 & 407 \\
-                & & Age & 32.6 (11.4) & 32.6 (13.0) & $F(1,652)=0.001$, $p=.976$ \\ \cline{3-6}
+                &          & Age       & 32.6 (11.4)  & 32.6 (13.0)  & $F(1,652)=0.001$, $p=.976$  \\ \cline{3-6}
                 & \acs{mdd} & Quantity & 195 & 333 \\
-                & & Age & 36.6 (13.8) & 37.8 (13.4) & $F(1,527)=0.719$, $p=.397$  \\
-                & & HDRS-17 & 8.9 (6.7) & 8.5 (6.8) & $F(1,525)=0.414$, $p=.520$  \\
+                &          & Age       & 36.6 (13.8)  & 37.8 (13.4)  & $F(1,527)=0.719$, $p=.397$  \\
+                &          & HDRS-17   & 8.9 (6.7)    & 8.5 (6.8)    & $F(1,525)=0.414$, $p=.520$  \\
             \end{tabular}
         \end{center}
         \vspace{15pt}
         \caption[]{Descriptive statistics of the trainings and validation samples. Table reports means and standard deviations of the individual cohorts used for the training of the \acl{svm}. Significance test was a univariate ANOVA without covariates. \\
-            \\
-            \setlength{\tabcolsep}{4pt}
+        \\
+        \setlength{\tabcolsep}{4pt}
             \begin{tabular}{llll}
-                \hspace{-7pt} Abbreviations: & \acs{hc} &-& \acl{hc} \\
-                & \acs{mdd} &-& \acl{mdd} \\
-                & Age &-& age in years \\
+                \hspace{-7pt} Abbreviations: & \acs{hc}  & - & \acl{hc}     \\
+                & \acs{mdd} & - & \acl{mdd}    \\
+                & Age       & - & age in years \\
             \end{tabular}
         }
         \label{tab:descrip_stats_train_validation}
@@ -414,11 +461,11 @@
         \renewcommand{\arraystretch}{1.2}
         \begin{center}
             \begin{tabular}{lccccc}
-                & \ac{cg} men & \ac{cg} women & \ac{tw} pre & \ac{tw} post &  \\
-                & $(N=15)$ & $(N=19)$ & $(N=8)$ & $(N=18)$ & significance test \\ \hline
-                Age & 34 & 32 & 33.9 & 33.1 & \multirow{2}{*}{$F(3,56)=0.190$, $p=.991$}\\
+                & \ac{cg} men & \ac{cg} women & \ac{tw} pre & \ac{tw} post &                                            \\
+                & $(N=15)$    & $(N=19)$      & $(N=8)$     & $(N=18)$     & significance test                          \\ \hline
+                Age     & 34          & 32            & 33.9        & 33.1         & \multirow{2}{*}{$F(3,56)=0.190$, $p=.991$} \\
                 & (8.6) & (6.3) & (14.1) & (31.3) \\ \hline
-                Highest & 4.9 & 4.8 & 5.0 & 5.1 & \multirow{2}{*}{$F(3,56)=0.802$, $p=.498$}\\
+                Highest & 4.9         & 4.8           & 5.0         & 5.1          & \multirow{2}{*}{$F(3,56)=0.802$, $p=.498$} \\
                 Education & (0.9) & (0.8) & (0.0) & (0.5)
 
 
@@ -426,13 +473,13 @@
         \end{center}
         \vspace{15pt}
         \caption[]{Descriptive statistics of the application sample (transgender and \acl{cg} individuals). Table reports means and standard deviations of the transgender individuals and controls from a similar measurement period used for the test of the \acl{svm} in \ac{tw}. Significance test was univariate ANOVA without covariates. From 15 out of 29 \ac{tw} were requested whether they had a depressive episode and 8 from the 15 \ac{tw} indicated that they had a depressive episode.
-            \emph{Highest Education} was measured according to educational attainment in numbers from 1 = special school to 6 = universal degree. \\
-            \\
-            \setlength{\tabcolsep}{4pt}
+        \emph{Highest Education} was measured according to educational attainment in numbers from 1 = special school to 6 = universal degree. \\
+        \\
+        \setlength{\tabcolsep}{4pt}
             \begin{tabular}{llll}
-                \hspace{-7pt} Abbreviations: & \acs{tw} &-& \acl{tw} \\
-                & pre/post &-& before/after \acl{cht} \\
-                & Age &-& age in years \\
+                \hspace{-7pt} Abbreviations: & \acs{tw} & - & \acl{tw}               \\
+                & pre/post & - & before/after \acl{cht} \\
+                & Age      & - & age in years           \\
             \end{tabular}
         }
         \label{tab:descript_stats_apllication}
@@ -444,32 +491,32 @@
             \renewcommand{\arraystretch}{1.2}
             \begin{tabular}{rr|c|c}
                 & \multicolumn{1}{c}{} & \multicolumn{2}{c}{actual} \\
-                & group & female & male \\ \cline{2-4}
-                \multirow{4}{*}{\rotatebox{90}{predicted}} & \multirow{2}{*}{female} & 202 & 17\\
-                & & (\ac{tpr} = \SI{99.9}{\percent}) & (\ac{tnr} = \SI{11.5}{\percent})\\ \cline{2-4}
-                & \multirow{2}{*}{male} & 1 & 131 \\
-                & & (\ac{tnr} = \SI{0.1}{\percent}) & (\ac{tpr} = \SI{88.5}{\percent})\\
+                & group                   & female                           & male                             \\ \cline{2-4}
+                \multirow{4}{*}{\rotatebox{90}{predicted}} & \multirow{2}{*}{female} & 202                              & 17                               \\
+                &                         & (\acs{tpr} = \SI{99.9}{\percent}) & (\acs{tnr} = \SI{11.5}{\percent}) \\ \cline{2-4}
+                & \multirow{2}{*}{male}   & 1                                & 131                              \\
+                &                         & (\acs{tnr} = \SI{0.1}{\percent})  & (\acs{tpr} = \SI{88.5}{\percent}) \\
             \end{tabular}
         \end{subtable}
         \begin{subtable}[c]{0.2\textwidth}
             \begin{tabular}{rl}
                 \multicolumn{2}{c}{} \\
-                Accuracy &    \SI{94.87}{\percent} \\
-                Balanced Accuracy &     \SI{94.01}{\percent} \\
-                Precision &    \SI{99.24}{\percent} \\
-                Recall & \SI{88.51}{\percent} \\
-                F1-Score & 0.9357 \\
+                Accuracy          & \SI{94.87}{\percent} \\
+                Balanced Accuracy & \SI{94.01}{\percent} \\
+                Precision         & \SI{99.24}{\percent} \\
+                Recall            & \SI{88.51}{\percent} \\
+                F1-Score          & 0.9357               \\
 
             \end{tabular}
         \end{subtable}
         \vspace{15pt}
         \caption[]{Results of the validation set ($N = 351$; $N_{\text{male}} = 148$; $N_{\text{female}} = 203$). Classification results in absolute numbers and percentage of accurately identified biological sex.
 
-            \vspace{2pt}
-            \setlength{\tabcolsep}{4pt}
+        \vspace{2pt}
+        \setlength{\tabcolsep}{4pt}
             \begin{tabular}{llll}
-                \hspace{-6pt} Abbreviations: & \acs{tpr} &-& \acl{tpr} (sensitivity) \\
-                & \ac{tnr} &-& \acl{tnr} (specificity) \\
+                \hspace{-6pt} Abbreviations: & \acs{tpr} & - & \acl{tpr} (sensitivity) \\
+                & \ac{tnr}  & - & \acl{tnr} (specificity) \\
             \end{tabular}
         }
         \label{tab:results_validatons_set}
@@ -481,32 +528,32 @@
             \renewcommand{\arraystretch}{1.2}
             \begin{tabular}{rr|c|c|c}
                 & \multicolumn{1}{c}{} & \multicolumn{3}{c}{actual} \\
-                & group & \ac{cg} women & \ac{cg} men & \ac{tw}\\ \cline{2-5}
-                \multirow{4}{*}{\rotatebox{90}{predicted}} & \multirow{2}{*}{female} & 19 & 1 & 10\\
-                & & (\ac{tpr} = \SI{100.0}{\percent}) & (\ac{tnr} = \SI{6.7}{\percent}) & (\ac{tnr} = \SI{38.5}{\percent})\\ \cline{2-5}
-                & \multirow{2}{*}{male} & 0 & 14 & 16\\
-                & & (\ac{tnr} = \SI{0.0}{\percent}) & (\ac{tpr} = \SI{93.3}{\percent}) & (\ac{tpr} = \SI{61.5}{\percent})\\
+                & group                   & \acs{cg} women                     & \acs{cg} men                      & \acs{tw}                          \\ \cline{2-5}
+                \multirow{4}{*}{\rotatebox{90}{predicted}} & \multirow{2}{*}{female} & 19                                & 1                                & 10                               \\
+                &                         & (\acs{tpr} = \SI{100.0}{\percent}) & (\acs{tnr} = \SI{6.7}{\percent})  & (\acs{tnr} = \SI{38.5}{\percent}) \\ \cline{2-5}
+                & \multirow{2}{*}{male}   & 0                                 & 14                               & 16                               \\
+                &                         & (\acs{tnr} = \SI{0.0}{\percent})   & (\acs{tpr} = \SI{93.3}{\percent}) & (\acs{tpr} = \SI{61.5}{\percent}) \\
             \end{tabular}
         \end{subtable}
         \begin{subtable}[c]{0.2\textwidth}
             \begin{tabular}{rl}
                 \multicolumn{2}{l}{The following metrics are} \\
                 \multicolumn{2}{l}{related to the \ac{cg} groups only:} \\
-                Accuracy &    \SI{94.12}{\percent} \\
-                Balanced Accuracy &\SI{96.67}{\percent} \\
-                F1-Score & \num{0.9655} \\
+                Accuracy          & \SI{94.12}{\percent} \\
+                Balanced Accuracy & \SI{96.67}{\percent} \\
+                F1-Score          & \num{0.9655}         \\
             \end{tabular}
         \end{subtable}
         \vspace{15pt}
         \caption[]{Results of the application set ($N = 60$; $N_{\text{\ac{cg} men}} = 15$; $N_{\text{\ac{cg} women}} = 19$; $N_\text{\ac{tw}} = 26$). Classification results in absolute numbers and percentage of accurately identified biological sex.
 
-            \vspace{2pt}
-            \setlength{\tabcolsep}{4pt}
+        \vspace{2pt}
+        \setlength{\tabcolsep}{4pt}
             \begin{tabular}{llll}
-                \hspace{-6pt} Abbreviations: & \acs{tpr} &-& \acl{tpr} (sensitivity) \\
-                & \acs{tnr} &-& \acl{tnr} (specificity) \\
-                & \acs{cg} &-& \acl{cg} \\
-                & \acs{tw} &-& \acl{tw} \\
+                \hspace{-6pt} Abbreviations: & \acs{tpr} & - & \acl{tpr} (sensitivity) \\
+                & \acs{tnr} & - & \acl{tnr} (specificity) \\
+                & \acs{cg}  & - & \acl{cg}                \\
+                & \acs{tw}  & - & \acl{tw}                \\
             \end{tabular}
         }
         \label{tab:results_first_application_set}
@@ -519,32 +566,32 @@
             \renewcommand{\arraystretch}{1.2}
             \begin{tabular}{rr|c|c}
                 & \multicolumn{1}{c}{} & \multicolumn{2}{c}{actual} \\
-                & group & female & male \\ \cline{2-4}
-                \multirow{4}{*}{\rotatebox{90}{predicted}} & \multirow{2}{*}{female} & 829 & 72\\
-                & & (\ac{tpr} = \SI{97.2}{\percent}) & (\ac{tnr} = \SI{13.1}{\percent})\\ \cline{2-4}
-                & \multirow{2}{*}{male} & 24 & 479 \\
-                & & (\ac{tnr} = \SI{2.8}{\percent}) & (\ac{tpr} = \SI{86.9}{\percent})\\
+                & group                   & female                           & male                             \\ \cline{2-4}
+                \multirow{4}{*}{\rotatebox{90}{predicted}} & \multirow{2}{*}{female} & 829                              & 72                               \\
+                &                         & (\acs{tpr} = \SI{97.2}{\percent}) & (\acs{tnr} = \SI{13.1}{\percent}) \\ \cline{2-4}
+                & \multirow{2}{*}{male}   & 24                               & 479                              \\
+                &                         & (\acs{tnr} = \SI{2.8}{\percent})  & (\acs{tpr} = \SI{86.9}{\percent}) \\
             \end{tabular}
         \end{subtable}
         \begin{subtable}[c]{0.2\textwidth}
             \begin{tabular}{rl}
                 \multicolumn{2}{c}{} \\
-                Accuracy &    \SI{93.16}{\percent} \\
-                Balanced Accuracy &     \SI{92.06}{\percent} \\
-                Precision &    \SI{95.23}{\percent} \\
-                Recall & \SI{86.93}{\percent} \\
-                F1-Score & 0.9206 \\
+                Accuracy          & \SI{93.16}{\percent} \\
+                Balanced Accuracy & \SI{92.06}{\percent} \\
+                Precision         & \SI{95.23}{\percent} \\
+                Recall            & \SI{86.93}{\percent} \\
+                F1-Score          & 0.9206               \\
 
             \end{tabular}
         \end{subtable}
         \vspace{15pt}
         \caption[]{Results of the second validation set  ($N = 1404$; $N_{\text{male}} = 551$; $N_{\text{female}} = 853$). Classification results in absolute numbers and percentage of accurately identified biological sex.
 
-            \vspace{2pt}
-            \setlength{\tabcolsep}{4pt}
+        \vspace{2pt}
+        \setlength{\tabcolsep}{4pt}
             \begin{tabular}{llll}
-                \hspace{-6pt} Abbreviations: & \acs{tpr} &-& \acl{tpr} (sensitivity) \\
-                & \acs{tnr} &-& \acl{tnr} (specificity) \\
+                \hspace{-6pt} Abbreviations: & \acs{tpr} & - & \acl{tpr} (sensitivity) \\
+                & \acs{tnr} & - & \acl{tnr} (specificity) \\
             \end{tabular}
         }
         \label{tab:results_second_application_set}
@@ -554,10 +601,14 @@
         \renewcommand{\arraystretch}{1.2}
         \begin{center}
             \begin{tabular}{l|S[table-format=3.0]S[table-format=2.0]|S[table-format=3.0]S[table-format=2.0]|S[table-format=0.4]}
-                \multicolumn{1}{c}{}& \multicolumn{2}{c}{validation set 1} & \multicolumn{2}{c}{validation set 2} & {Fisher’s Exact Test} \\
-                & $N_\text{correct}$ & $N_\text{incorrect}$ & $N_\text{correct}$ & $N_\text{incorrect}$ & {$p$-value} \\ \hline
-                \ac{cg} women & 131 & 17 & 479 & 72 & .7386 \\
-                \ac{cg} men & 202 & 1 & 829 & 24 & .9955 \\
+                \multicolumn{1}{c}{} & \multicolumn{2}{c}{validation set 1} & \multicolumn{2}{c}{validation set 2}
+                & {Fisher’s Exact Test}
+                \\
+                & $N_\text{correct}$ & $N_\text{incorrect}$ & $N_\text{correct}$ & $N_\text{incorrect}$
+                & {$p$-value}
+                \\ \hline
+                \acs{cg} women & 131                & 17                   & 479                & 72                   & .7386       \\
+                \acs{cg} men   & 202                & 1                    & 829                & 24                   & .9955       \\
 
             \end{tabular}
         \end{center}
@@ -572,44 +623,82 @@
         \centering
 
         \begin{tabular}{l|lrrrrrr}
-            \multicolumn{1}{c}{}& & & & & \multicolumn{3}{c}{\textbf{MNI-Space}} \\ \cmidrule(lr){6-8}
-            \textbf{compared groups} & \textbf{region of interest} & \textbf{TFCE} & \textbf{p-FWE} & \textbf{k} & \textbf{x} & \textbf{y} & \textbf{z} \\ \hline
-            \multirow{9}{*}{\ac{tw}-pre > \ac{tw}-post} & R medial cingulate cortex & \multirow{2}{*}{1643.35} & \multirow{2}{*}{.005} & \multirow{2}{*}{15117} & \multirow{2}{*}{27} & \multirow{2}{*}{-9} & \multirow{2}{*}{16} \\
+            \multicolumn{1}{c}{} & & & & & \multicolumn{3}{c}{\textbf{MNI-Space}} \\ \cmidrule(lr){6-8}
+            \textbf{compared groups}                      & \textbf{region of interest}             & \textbf{TFCE}            & \textbf{p-FWE}
+            & \textbf{k}
+            & \textbf{x}
+            & \textbf{y}
+            & \textbf{z}
+            \\ \hline
+            \multirow{9}{*}{\ac{tw}-pre > \ac{tw}-post}   & R medial cingulate cortex               & \multirow{2}{*}{1643.35}
+            & \multirow{2}{*}{.005}
+            & \multirow{2}{*}{15117}
+            & \multirow{2}{*}{27}
+            & \multirow{2}{*}{-9}
+            & \multirow{2}{*}{16}
+            \\
             & and caudate nucleus \\
-            & L caudate nucleus & 1514.98 & .005 & 13228 & -22 & 18 & 12 \\
-            & L precentral and middle frontal gyrus & 766.08 & .029 & 470 & -36 & 4 & 54 \\
-            & L precuneus & 743.23 & .029 & 651 & -14 & -56 & 52 \\
-            & L postcentral gyrus & 668.59 & .040 & 410 & -63 & -14 & 39 \\
-            & R cerebellum & 632.84 & .045 & 505 & 48 & -54 & -27 \\
-            & R cerebellum & 611.18 & .047 & 258 & 40 & -38 & -46 \\ \hline
-            \multirow{4}{*}{\ac{tw}-pre > \ac{cg}-women} & L precuneus, R medial cingulate Cortex, & \multirow{2}{*}{982.71} & \multirow{2}{*}{<.001} & \multirow{2}{*}{108742} & \multirow{2}{*}{22} & \multirow{2}{*}{-3} & \multirow{2}{*}{15} \\
+            & L caudate nucleus                       & 1514.98                  & .005                   & 13228                   & -22                 & 18                   & 12                   \\
+            & L precentral and middle frontal gyrus   & 766.08                   & .029                   & 470                     & -36                 & 4                    & 54                   \\
+            & L precuneus                             & 743.23                   & .029                   & 651                     & -14                 & -56                  & 52                   \\
+            & L postcentral gyrus                     & 668.59                   & .040                   & 410                     & -63                 & -14                  & 39                   \\
+            & R cerebellum                            & 632.84                   & .045                   & 505                     & 48                  & -54                  & -27                  \\
+            & R cerebellum                            & 611.18                   & .047                   & 258                     & 40                  & -38                  & -46                  \\ \hline
+            \multirow{4}{*}{\ac{tw}-pre > \ac{cg}-women}  & L precuneus, R medial cingulate Cortex,
+            & \multirow{2}{*}{982.71}
+            & \multirow{2}{*}{<.001}
+            & \multirow{2}{*}{108742}
+            & \multirow{2}{*}{22}
+            & \multirow{2}{*}{-3}
+            & \multirow{2}{*}{15}
+            \\
             & L + R lingual gyrus \\
-            & L cerebellum & 328.77 & .003 & 4657 & -30 & -33 & -50 \\
-            & R precentral, frontal inferior gyrus & 127.46 & .041 & 360 & 62 & 16 & 27 \\ \hline
-            \multirow{2}{*}{\ac{tw}-post > \ac{cg}-women} & R calcarine/lingual gyrus, precuneus & 1312.08 & <.001 & 3875 & 4 & -50 & 3 \\
-            & L cuneus, superior occipital gyrus & 605.11 & .023 & 498 & -10 & -96 & 36 \\
-            \ac{tw}-post < \ac{cg}-women & R postcentral gyrus & 1057.71 & .026 & 562 & 45 & -21 & 32 \\ \hline
-            \multirow{6}{*}{\ac{tw}-pre > \ac{cg}-men} & L caudate nucleus, putamen, hippocampus & 745.18 & .009 & 3018 & -21 & 18 & 9 \\
-            & R caudate nucleus, putamen & 713.97 & .010 & 2336 & 28 & -4 & 16 \\
-            & R Precuneus, Mid Cingulum & 673.63 & .013 & 3185 & 8 & -28 & 39 \\
-            & L Pre-, Postcentral & 654.18 & .015 & 822 & -69 & -15 & -32 \\
-            & R Hippocampus, Parahippocampus & 567.93 & .028 & 713 & 20 & -8 & -30 \\
-            & R Calcarine, Lingual gyrus & 528.98 & .002 & 416 & 26 & -75 & 3 \\ \hline
-            \multirow{3}{*}{\ac{tw}-post < \ac{cg}-men} & L middle temporal lobe, cerebellum & \multirow{2}{*}{939.61} & \multirow{2}{*}{<.001} & \multirow{2}{*}{111736} & \multirow{2}{*}{32} & \multirow{2}{*}{-56} & \multirow{2}{*}{-38} \\
+            & L cerebellum                            & 328.77                   & .003                   & 4657                    & -30                 & -33                  & -50                  \\
+            & R precentral, frontal inferior gyrus    & 127.46                   & .041                   & 360                     & 62                  & 16                   & 27                   \\ \hline
+            \multirow{2}{*}{\ac{tw}-post > \ac{cg}-women} & R calcarine/lingual gyrus, precuneus
+            & 1312.08
+            & <.001
+            & 3875
+            & 4
+            & -50
+            & 3
+            \\
+            & L cuneus, superior occipital gyrus      & 605.11                   & .023                   & 498                     & -10                 & -96                  & 36                   \\
+            \ac{tw}-post < \ac{cg}-women                  & R postcentral gyrus                     & 1057.71                  & .026                   & 562                     & 45                  & -21                  & 32                   \\ \hline
+            \multirow{6}{*}{\ac{tw}-pre > \ac{cg}-men}    & L caudate nucleus, putamen, hippocampus
+            & 745.18
+            & .009
+            & 3018
+            & -21
+            & 18
+            & 9
+            \\
+            & R caudate nucleus, putamen              & 713.97                   & .010                   & 2336                    & 28                  & -4                   & 16                   \\
+            & R Precuneus, Mid Cingulum               & 673.63                   & .013                   & 3185                    & 8                   & -28                  & 39                   \\
+            & L Pre-, Postcentral                     & 654.18                   & .015                   & 822                     & -69                 & -15                  & -32                  \\
+            & R Hippocampus, Parahippocampus          & 567.93                   & .028                   & 713                     & 20                  & -8                   & -30                  \\
+            & R Calcarine, Lingual gyrus              & 528.98                   & .002                   & 416                     & 26                  & -75                  & 3                    \\ \hline
+            \multirow{3}{*}{\ac{tw}-post < \ac{cg}-men}   & L middle temporal lobe, cerebellum      & \multirow{2}{*}{939.61}
+            & \multirow{2}{*}{<.001}
+            & \multirow{2}{*}{111736}
+            & \multirow{2}{*}{32}
+            & \multirow{2}{*}{-56}
+            & \multirow{2}{*}{-38}
+            \\
             & R middle temporal lobe, cerebellum \\
-            & R precentral and frontal inferior gyrus & 260.12 & .016 & 628 & 57 & 6 & 12 \\
+            & R precentral and frontal inferior gyrus & 260.12                   & .016                   & 628                     & 57                  & 6                    & 12                   \\
         \end{tabular}
         \vspace{14pt}
         \caption[]{Results of the whole-brain analysis. For reasons of brevity only significant clusters $> k = 300$\,voxel are reported, we did not calculate a contrast comparing \acl{cg} men and women. The reported significant clusters resulted from group comparisons within a full factorial model corrected for total intracranial volume, age and sexual orientation. \\
-            \\
-            \setlength{\tabcolsep}{4pt}
+        \\
+        \setlength{\tabcolsep}{4pt}
             \begin{tabular}{llll}
-                \hspace{-6pt} Abbreviations: & \acs{tw} &-& \acl{tw} \\
-                & \acs{cg} &-& \acl{cg} \\
-                & pre/post &-& before/after \acl{cht} \\
-                & L/R &-& left/right \\
-                & k &-& cluster size \\
-                & TFCE &-& Threshold-Free-Cluster-Enhancement with subsequent Family-Wise-Error-Correction. \\
+                \hspace{-6pt} Abbreviations: & \acs{tw} & - & \acl{tw}                                                                         \\
+                & \acs{cg} & - & \acl{cg}                                                                         \\
+                & pre/post & - & before/after \acl{cht}                                                           \\
+                & L/R      & - & left/right                                                                       \\
+                & k        & - & cluster size                                                                     \\
+                & TFCE     & - & Threshold-Free-Cluster-Enhancement with subsequent Family-Wise-Error-Correction. \\
             \end{tabular}
         }
         \label{tab:results_whole_brain_analysis}
@@ -618,22 +707,22 @@
     \begin{table}[ht]
         \begin{center}
             \begin{tabular}{l|S[table-format=1.0]S[table-format=1.0]}
-                \multicolumn{1}{c}{}& {\ac{tw} pre} & {\ac{tw} post} \\
-                & {($N=2$)} & {($N=8$)} \\ \hline
-                Substance abuse & 1 & 1 \\
-                Eating Disorder & {-} & 1 \\
-                Obsessive-compulsive Disorder & {-} & 1 \\
-                Anxiety Disorder & 1 & 1 \\
-                Major Depressive Disorder & 2 & 6 \\
+                \multicolumn{1}{c}{}          & {\ac{tw} pre} & {\ac{tw} post} \\
+                & {($N=2$)}     & {($N=8$)}      \\ \hline
+                Substance abuse               & 1             & 1              \\
+                Eating Disorder               & {-}           & 1              \\
+                Obsessive-compulsive Disorder & {-}           & 1              \\
+                Anxiety Disorder              & 1             & 1              \\
+                Major Depressive Disorder     & 2             & 6              \\
             \end{tabular}
         \end{center}
         \caption[Comorbidities of transgeder individuals.]{Comorbidities of transgender individuals. Psychiatric comorbidities were reported for 10 \acl{tw}. \\
 
-            \vspace{-6pt}
-            \setlength{\tabcolsep}{4pt}
+        \vspace{-6pt}
+        \setlength{\tabcolsep}{4pt}
             \begin{tabular}{llll}
-                \hspace{-7pt} Abbreviations: & \ac{tw} &-& \acl{tw} \\
-                & pre/post &-& before/after \acl{cht} \\
+                \hspace{-7pt} Abbreviations: & \ac{tw}  & - & \acl{tw}               \\
+                & pre/post & - & before/after \acl{cht} \\
             \end{tabular}
         }
         \label{tab:psychiatric_comorbidities}
@@ -645,21 +734,34 @@
             \begin{tabular}{rl|S[table-format=2.0]S[table-format=1.0]|S[table-format=3.0]S[table-format=2.0]|S[table-format=3.0]S[table-format=1.0]|S[table-format=2.0]S[table-format=1.0]}
 
                 \multicolumn{2}{c}{} & \multicolumn{4}{c}{\textbf{first validation sample}} & \multicolumn{4}{c}{\textbf{second validation sample}} \\
-                \multicolumn{2}{c}{} & \multicolumn{2}{c}{{\ac{cg}-men}} & \multicolumn{2}{c|}{{\ac{cg}-women}} & \multicolumn{2}{c}{{\ac{cg}-men}} & \multicolumn{2}{c}{{\ac{cg}-women}}\\
-                \multicolumn{2}{c}{} & {correct} & {incorrect} & {correct} & {incorrect} & {correct} & {incorrect} & {correct} & {incorrect}\\ \cline{2-10}
-                \multirow{4}{*}{\rotatebox{90}{\textbf{scanner}}} & {FOR2107 Münster} & 14 & 2 & 26 & 0 & 66 & 3 & 109 & 4\\
-                & {FOR2107 Marburg} & 25 & 6 & 54 & 1 & 107 & 19 & 213 & 7\\
-                & {MNC Münster} & 44 & 7 & 84 & 0 & 103 & 18 & 160 & 4\\
-                & {BiDirect Münster} & 48 & 2 & 38 & 0 & 203 & 32 & 347 & 9\\ \cline{2-10}
-                & \textbf{Fisher's Exact Test} & \multicolumn{2}{c|}{$p=.131$} & \multicolumn{2}{c|}{$p=.586$}  & \multicolumn{2}{c|}{$p=.101$}&\multicolumn{2}{c}{$p=.882$}  \\
+                \multicolumn{2}{c}{} & \multicolumn{2}{c}{{\ac{cg}-men}} & \multicolumn{2}{c|}{{\ac{cg}-women}}
+                & \multicolumn{2}{c}{{\ac{cg}-men}}
+                & \multicolumn{2}{c}{{\ac{cg}-women}}
+                \\
+                \multicolumn{2}{c}{} & {correct} & {incorrect} & {correct} & {incorrect} & {correct} & {incorrect}
+                & {correct}
+                & {incorrect}
+                \\ \cline{2-10}
+                \multirow{4}{*}{\rotatebox{90}{\textbf{scanner}}} & {FOR2107 Münster}  & 14 & 2 & 26 & 0 & 66
+                & 3
+                & 109
+                & 4
+                \\
+                & {FOR2107 Marburg}  & 25 & 6 & 54 & 1 & 107 & 19 & 213 & 7 \\
+                & {MNC Münster}      & 44 & 7 & 84 & 0 & 103 & 18 & 160 & 4 \\
+                & {BiDirect Münster} & 48 & 2 & 38 & 0 & 203 & 32 & 347 & 9 \\ \cline{2-10}
+                & \textbf{Fisher's Exact Test} & \multicolumn{2}{c|}{$p=.131$} & \multicolumn{2}{c|}{$p=.586$}
+                & \multicolumn{2}{c|}{$p=.101$}
+                & \multicolumn{2}{c}{$p=.882$}
+                \\
             \end{tabular}
         \end{center}
         \caption[Classification results separated by scanner features and site]{Classification results separated by scanner features and site. Table shows frequencies of correctly and incorrectly classified \ac{cg}-women and –men for all validation samples that used different scanners. The third validation sample was measured with the same MRI-sequence as MNC Münster. \\
 
-            \vspace{-6pt}
-            \setlength{\tabcolsep}{4pt}
+        \vspace{-6pt}
+        \setlength{\tabcolsep}{4pt}
             \begin{tabular}{llll}
-                \hspace{-6pt} Abbreviations: & \acs{cg} &-& \acl{cg} \\
+                \hspace{-6pt} Abbreviations: & \acs{cg} & -& \acl{cg} \\
             \end{tabular}
         }
         \label{tab:scanner_site_men_vs_women}
@@ -670,54 +772,56 @@
         \begin{center}
             \begin{tabular}{rl|S[table-format=3.2]S[table-format=<0.3, add-integer-zero=false]S[table-format=4.0]S[table-format=+2.0]S[table-format=+2.0]S[table-format=+2.0]}
                 \multicolumn{5}{c}{} & \multicolumn{3}{c}{\textbf{MNI-space}} \\ \cmidrule(lr){6-8}
-                \multicolumn{2}{c|}{} & \textbf{TFCE} & \textbf{p-FWE} & {\textbf{k}} & {\textbf{x}} & {\textbf{y}} & {\textbf{z}} \\ \cline{2-8}
+                \multicolumn{2}{c|}{} & \textbf{TFCE} & \textbf{p-FWE} & {\textbf{k}} & {\textbf{x}} & {\textbf{y}}
+                & {\textbf{z}}
+                \\ \cline{2-8}
                 \textbf{Insula} & \ac{tw}-pre > post & & {n.s.} \\
                 & \ac{tw}-pre < post & & {n.s.} \\
-                & \ac{tw}-pre > \ac{cg}-women & 13.70 & .002 & 643 & 40 & 20 & -8\\
-                & & 2.14 & .014 & 107 & -24 & 21 & -15 \\
-                & \ac{tw}-pre < \ac{cg}-women & 121.60 & .001 & 471 & -40 & -3 & 0\\
-                & \ac{tw}-pre > \ac{cg}-men & 73.19 & \textless{}.001 & 2267 & -32 & -8 & 12 \\
-                & & 19.90 & \textless{}.001 & 1271 & 38 & -20 & 3\\
-                & & 3.18 & .001 & 620& 46 & 22 & -4\\
-                & \ac{tw}-pre < \ac{cg}-men & & {n.s.}  \\
-                & \ac{tw}-post > \ac{cg}-women & 4.76 & \textless{}.001 & 1058 & 40 & 21 & 8 \\
-                & & 1.11 & .001 & 479 & -33 & 26 & 4\\
-                & \ac{tw}-post < \ac{cg}-women & 357.70 & \textless{}.001 & 524 & -40 & -8 & 2\\
-                & \ac{tw}-post > \ac{cg}-men & 24.46 & \textless{}.001 & 2427 & -32 & 3 & 12\\
-                & & 9.54 & \textless{}.001 & 1309 & 48 & -10 & 3\\
-                & & 5.41 & \textless{}.001 & 230 & 45 & 24 & -3\\
-                & & 2.11 & \textless{}.001 & 200 & 33 & 16 & -21\\
-                & \ac{tw}-post < \ac{cg}-men & & {n.s.}\\ \cline{2-8}
-                \textbf{Putamen}  & \ac{tw}-pre > post & 445.23 & .005 & 1179 & -21 & 16 & 8 \\
-                & \ac{tw}-pre < post & & {n.s.}\\
-                & & 355.78 & .008 & 519 & 24 & 6 & 15 \\
-                & \ac{tw}-pre > \ac{cg}-women & 99.88 & \textless{}.001 & 1848 & 26 & 6 & 15 \\
-                & & 84.36 & \textless{}.001 & 2006 & -20 & 21 & -3  \\
-                & \ac{tw}-pre > \ac{cg}-men & 266.62 & \textless{}.001 & 2351 & -21 & 15 & 8\\
-                & & 155.27 & \textless{}.001 & 2130 & 28 & -3 & 15 \\
-                & \ac{tw}-pre < \ac{cg}-men & & {n.s.}\\
-                & \ac{tw}-post > \ac{cg}-women & & {n.s.}\\
-                & \ac{tw}-post < \ac{cg}-women & 134.84 & .002 & 324 & -15 & 9 & 3 \\
-                & \ac{tw}-post > \ac{cg}-men & 24.46 & \textless{}.001 & 272 & -32 & 3 & 12 \\
-                & & 2.10 & \textless{}.001 & 215 & -28 & 6 & 10 \\
-                & & 0.52 & \textless{}.001 & 119 & 34 & 2 & 4\\
-                & \ac{tw}-post < \ac{cg}-men & & {n.s.}\\
+                & \ac{tw}-pre > \ac{cg}-women  & 13.70  & .002            & 643  & 40  & 20  & -8  \\
+                &                              & 2.14   & .014            & 107  & -24 & 21  & -15 \\
+                & \ac{tw}-pre < \ac{cg}-women  & 121.60 & .001            & 471  & -40 & -3  & 0   \\
+                & \ac{tw}-pre > \ac{cg}-men    & 73.19  & \textless{}.001 & 2267 & -32 & -8  & 12  \\
+                &                              & 19.90  & \textless{}.001 & 1271 & 38  & -20 & 3   \\
+                &                              & 3.18   & .001            & 620  & 46  & 22  & -4  \\
+                & \ac{tw}-pre < \ac{cg}-men & & {n.s.} \\
+                & \ac{tw}-post > \ac{cg}-women & 4.76   & \textless{}.001 & 1058 & 40  & 21  & 8   \\
+                &                              & 1.11   & .001            & 479  & -33 & 26  & 4   \\
+                & \ac{tw}-post < \ac{cg}-women & 357.70 & \textless{}.001 & 524  & -40 & -8  & 2   \\
+                & \ac{tw}-post > \ac{cg}-men   & 24.46  & \textless{}.001 & 2427 & -32 & 3   & 12  \\
+                &                              & 9.54   & \textless{}.001 & 1309 & 48  & -10 & 3   \\
+                &                              & 5.41   & \textless{}.001 & 230  & 45  & 24  & -3  \\
+                &                              & 2.11   & \textless{}.001 & 200  & 33  & 16  & -21 \\
+                & \ac{tw}-post < \ac{cg}-men & & {n.s.} \\ \cline{2-8}
+                \textbf{Putamen} & \ac{tw}-pre > post           & 445.23 & .005            & 1179 & -21 & 16  & 8   \\
+                & \ac{tw}-pre < post & & {n.s.} \\
+                &                              & 355.78 & .008            & 519  & 24  & 6   & 15  \\
+                & \ac{tw}-pre > \ac{cg}-women  & 99.88  & \textless{}.001 & 1848 & 26  & 6   & 15  \\
+                &                              & 84.36  & \textless{}.001 & 2006 & -20 & 21  & -3  \\
+                & \ac{tw}-pre > \ac{cg}-men    & 266.62 & \textless{}.001 & 2351 & -21 & 15  & 8   \\
+                &                              & 155.27 & \textless{}.001 & 2130 & 28  & -3  & 15  \\
+                & \ac{tw}-pre < \ac{cg}-men & & {n.s.} \\
+                & \ac{tw}-post > \ac{cg}-women & & {n.s.} \\
+                & \ac{tw}-post < \ac{cg}-women & 134.84 & .002            & 324  & -15 & 9   & 3   \\
+                & \ac{tw}-post > \ac{cg}-men   & 24.46  & \textless{}.001 & 272  & -32 & 3   & 12  \\
+                &                              & 2.10   & \textless{}.001 & 215  & -28 & 6   & 10  \\
+                &                              & 0.52   & \textless{}.001 & 119  & 34  & 2   & 4   \\
+                & \ac{tw}-post < \ac{cg}-men & & {n.s.} \\
 
 
             \end{tabular}
         \end{center}
         \caption[ROI analysis in the restricted transgender sample without psychiatric comorbidities]{\ac{roi} analysis in the restricted transgender sample without psychiatric comorbidities. Table shows significant clusters $> k = 100$~voxel for reasons of brevity. Transgender individuals that showed comorbidities according to the structured clinical interview based on DSM-IV-criteria were excluded from the analysis leaving $N = 6$ \ac{tw}-pre and $N = 10$ \ac{tw}-post. \\
 
-            \vspace{-6pt}
-            \setlength{\tabcolsep}{4pt}
+        \vspace{-6pt}
+        \setlength{\tabcolsep}{4pt}
             \begin{tabular}{llll}
-                \hspace{-6pt} Abbreviations: & \ac{tw} &-& \acl{tw} \\
-                & \acs{cg} &-& \acl{cg} \\
-                & pre-/post &-& before/after \acl{cht} \\
-                & TFCE &-& statistic of the non-parametric approach using threshold-free cluster  \\
-                & & & enhancement \\
-                & k &-& clustersize \\
-                & n.s. &-& not significant, $k > 100$ \\
+                \hspace{-6pt} Abbreviations: & \ac{tw}   & - & \acl{tw}                                                              \\
+                & \acs{cg}  & - & \acl{cg}                                                              \\
+                & pre-/post & - & before/after \acl{cht}                                                \\
+                & TFCE      & - & statistic of the non-parametric approach using threshold-free cluster \\
+                &           &   & enhancement                                                           \\
+                & k         & - & clustersize                                                           \\
+                & n.s.      & - & not significant, $k > 100$                                            \\
             \end{tabular}
         }
         \label{tab:roi_analysis_restricted_tw_sample}
@@ -728,12 +832,12 @@
         \end{center}
         \caption[]{Overview of training, validation and application procedure of the biological sex classifier.
 
-            \vspace{4pt}
-            \setlength{\tabcolsep}{4pt}
+        \vspace{4pt}
+        \setlength{\tabcolsep}{4pt}
             \begin{tabular}{llll}
                 \hspace{-6pt}
-                Abbreviations: & \ac{svm} &-& \acl{svm} \\
-                & \acs{pca} &-& \acl{pca} \\
+                Abbreviations: & \ac{svm}  & - & \acl{svm} \\
+                & \acs{pca} & - & \acl{pca} \\
             \end{tabular}
         }
         \label{fig:flow_chart_classification}
@@ -763,14 +867,14 @@
             \caption[]{Second Validation sample: MDD \ac{cg} men}
         \end{subfigure}
         \caption[]{Receiver Operation Characteristics for the classification as biological sex male for \ac{cg}-men in first, second and third validation sample as well \acl{tw} of our application sample. \\
-            \\
-            \vspace{-8pt}
-            \setlength{\tabcolsep}{4pt}
+        \\
+        \vspace{-8pt}
+        \setlength{\tabcolsep}{4pt}
             \begin{tabular}{llll}
-                \hspace{-7pt} Abbreviations: & \acs{cg} &-& \acl{cg} \\
-                & \acs{tw} &-& \acl{tw} \\
-                & \acs{mdd} &-& \acl{mdd} \\
-                & \acs{auc} &-& \acl{auc} \\
+                \hspace{-7pt} Abbreviations: & \acs{cg}  & - & \acl{cg}  \\
+                & \acs{tw}  & - & \acl{tw}  \\
+                & \acs{mdd} & - & \acl{mdd} \\
+                & \acs{auc} & - & \acl{auc} \\
             \end{tabular}
         }
         \label{fig:roc_curves_classification_as_male}
