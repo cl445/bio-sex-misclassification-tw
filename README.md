@@ -27,7 +27,7 @@ structure in TW differs from brain structure of their biological sex (male) as w
 This finding substantiates evidence that TIs show specific brain structural alterations leading to a different pattern
 of brain structure than CG-individuals.
 
-Keywords: Neuroimaging - Machine Learning - Gender Dysphoria - Depression - Structural MRI - Brain Development
+**Keywords:** Neuroimaging - Machine Learning - Gender Dysphoria - Depression - Structural MRI - Brain Development
 
 ## About this Repository
 
@@ -50,7 +50,7 @@ For citations please use the data from the following BiBTeX entry ([download](ht
     month = {apr},
     year = {2020},
     publisher = {Springer Science and Business Media {\{}LLC{\}}},
-    url = {https://doi.org/10.1038{\%}2Fs41386-020-0666-3 http://www.nature.com/articles/s41386-020-0666-3}
+    url = {https://doi.org/10.1038{\%}2Fs41386-020-0666-3 https://www.nature.com/articles/s41386-020-0666-3}
 }
 ```
 
