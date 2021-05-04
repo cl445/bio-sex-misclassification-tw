@@ -38,19 +38,23 @@ arXiv: https://arxiv.org/abs/1911.10617v2
 The research paper was accepted for publication at Neuropsychopharmacology (Internet - 9th April 2020). Available
 from: https://doi.org/10.1038/s41386-020-0666-3
 
-For citations please use the data from the following BiBTeX entry ([download](https://gitcdn.link/repo/cl445/bio-sex-misclassification-tw/main/FlintFoerster2020.bib)):
+For citations please use the data from the following BiBTeX
+entry ([download](https://gitcdn.link/repo/cl445/bio-sex-misclassification-tw/main/FlintFoerster2020.bib)):
 
 ```bibtex
 @article{FlintFoerster2020,
-    title = {Biological sex classification with structural MRI data shows increased misclassification in transgender women},
-    author = {Flint, Claas and F{\"o}rster, Katharina and Koser, Sophie A and Konrad, Carsten and Zwitserlood, Pienie and Berger, Klaus and Hermesdorf, Marco and Kircher, Tilo and Nenadic, Igor and Krug, Axel and Baune, Bernhard T and Dohm, Katharina and Redlich, Ronny and Opel, Nils and Arolt, Volker and Hahn, Tim and Jiang, Xiaoyi and Dannlowski, Udo and Grotegerd, Dominik},
+    author = {Flint, Claas and F{\"{o}}rster, Katharina and Koser, Sophie A and Konrad, Carsten and Zwitserlood, Pienie and Berger, Klaus and Hermesdorf, Marco and Kircher, Tilo and Nenadic, Igor and Krug, Axel and Baune, Bernhard T and Dohm, Katharina and Redlich, Ronny and Opel, Nils and Arolt, Volker and Hahn, Tim and Jiang, Xiaoyi and Dannlowski, Udo and Grotegerd, Dominik},
     doi = {10.1038/s41386-020-0666-3},
     issn = {0893-133X},
     journal = {Neuropsychopharmacology},
-    month = {apr},
-    year = {2020},
+    month = {sep},
+    number = {10},
+    pages = {1758--1765},
     publisher = {Springer Science and Business Media {\{}LLC{\}}},
-    url = {https://doi.org/10.1038{\%}2Fs41386-020-0666-3 https://www.nature.com/articles/s41386-020-0666-3}
+    title = {{Biological sex classification with structural MRI data shows increased misclassification in transgender women}},
+    url = {https://doi.org/10.1038{\%}2Fs41386-020-0666-3 https://www.nature.com/articles/s41386-020-0666-3},
+    volume = {45},
+    year = {2020}
 }
 ```
 
